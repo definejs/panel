@@ -1,6 +1,6 @@
 {
   "name": "@definejs/panel",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "",
   "main": "index.js",
   "scripts": {},
@@ -15,7 +15,7 @@
   "dependencies": {
     "@definejs/app-module": "^0.1.2",
     "@definejs/emitter": "^0.1.3",
-    "@definejs/object": "^0.1.5",
+    "@definejs/object": "^1.0.6",
     "@definejs/string": "^0.1.3",
     "@definejs/template": "^0.1.0",
     "jquery": "^3.5.1"
