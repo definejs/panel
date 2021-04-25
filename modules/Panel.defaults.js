@@ -5,6 +5,11 @@
 */
 module.exports = {
     /**
+    * 生成组件时的 id 前缀。
+    * 建议保留现状。
+    */
+    idPrefix: 'definejs-Panel',
+    /**
     * 所关联的 DOM 节点容器的选择器模板。
     */
     container: '[data-panel="{id}"]',

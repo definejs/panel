@@ -1,5 +1,5 @@
-﻿var $String = require('@definejs/string');
-var $Object = require('@definejs/object');
+﻿const $String = require('@definejs/string');
+const $Object = require('@definejs/object');
 
 module.exports = {
     /**

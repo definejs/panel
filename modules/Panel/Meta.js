@@ -1,14 +1,12 @@
-const $String = require('@definejs/string');
+const IDMaker = require('@definejs/id-maker');
 
-const prefix = 'defnejs-panel-';     //用于生成组件 id 的前缀部分。
-const suffix = 4;                 //用于生成组件 id 的随机部分的长度。
 
 module.exports = {
     create(config, others) {
-        const id = $String.randomId(prefix, suffix);
+        let maker = new IDMaker(config.idPrefix);
 
-        const meta = {
-            'id': id,               //实例的 id，全局唯一。
+        let meta = {
+            'id': maker.next(),     //实例的 id，全局唯一。
             'container': '',        //容器的 DOM 节点(或其对应的选择器)。
             'rendered': false,      //是否已渲染过。
             'renderArgs': [],       //最近一次 render() 时的参数数组，用于 refresh()。
